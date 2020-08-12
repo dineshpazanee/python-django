@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Mark</title>
+</head>
+<body>
+    <h1>Add Mark</h1>
+    <a href="index/">View Mark</a>
+    <form action="addmark/" method="post">
+        {% csrf_token %}
+        <label for="">Roll No:</label><br>
+        <input type="text" id="rollno" name="rollno" value=""><br><br>
+
+        <label for="">Name:</label><br>
+        <input type="text" id="name" name="name" value=""><br><br>
+
+        <label for="">Total Mark:</label><br>
+        <input type="text" id="totalmark" name="totalmark" value=""><br><br>
+
+        <input type="submit" value="Submit">
+      </form> 
+</body>
+
+{{result}}
+</html>
